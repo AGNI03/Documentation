@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header><h1>C++ Introduction</h1></header>
+        <ul>
+            <li><a class="nav-link" href="#Overview_of_C++">Overview of C++</a></li>
+            <li><a class="nav-link" href="#Basic_Syntax">Basic Syntax</a></li>
+            <li><a class="nav-link" href="#Data_Types_and_Variables">Data Types and Variables</a></li>
+            <li><a class="nav-link" href="#Operators">Operators</a></li>
+            <li><a class="nav-link" href="#Control_Flow">Control Flow</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#Object-Oriented_Programming_Basics">Object-Oriented Programming Basics</a></li>
+            <li><a class="nav-link" href="#Standard_Library_and_Common_Functions">Standard Library and Common Functions</a></li>
+            <li><a class="nav-link" href="#Compilation_and_Execution">Compilation and Execution</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Overview_of_C++">
+            <header>
+                <h2>Overview of C++</h2>
+            </header>
+            <article>
+                <p>C++ is a widely-used programming language known for its performance and versatility.
+                    It is an extension of the C programming language and is often used for:</p>
+                <ul>
+                    <li>System/software development</li>
+                    <li>Game development</li>
+                    <li>Embedded systems</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="main-section" id="Basic_Syntax">
+            <header>
+                <h2>Basic Syntax</h2>
+            </header>
+            <article>
+                <h3>Structure of a C++ Program</h3>
+                <p>A C++ program consists of:</p>
+                <ul>
+                    <li>Preprocessor directives</li>
+                    <li>Functions</li>
+                </ul>
+                <p>The main function is the entry point of the program where execution begins.</p>
+                <code>
+                    #include &ltiostream&gt<br>
+                    int main(){<br>
+                    &nbsp&nbsp// Main code goes here return 0;<br>
+                    }
+                </code>
+                <h3>Comments</h3>
+                <p>Comments are used for documentation and explanation within the code. They can be:</p>
+                <ul>
+                    <li>Single-line: // Comment</li>
+                    <li>Multi-line: /* Comment */</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="main-section" id="Data_Types_and_Variables">
+            <header>
+                <h2>Data Types and Variables</h2>
+            </header>
+            <article>
+                <h3>Basic Data Types</h3>
+                <p>C++ supports various data types such as:</p>
+                <ul>
+                    <li>Integers</li>
+                    <li>Floating-point numbers</li>
+                    <li>Characters</li>
+                    <li>Booleans</li>
+                </ul>
+                <code>
+                    int age = 25;<br>
+                    float height = 5.9;<br>
+                    char grade = 'A';<br>
+                    bool isStudent = true;
+                </code>
+                <h3>Declaring Variables</h3>
+                <p>Variables are used to store data. They must be declared with a specific data type before they can be
+                    used.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="main-section" id="Operators">
+            <header>
+                <h2>Operators</h2>
+            </header>
+            <article>
+                <h3>Arithmetic Operators</h3>
+                <p>C++ supports arithmetic operations like:</p>
+                <ul>
+                    <li>Addition</li>
+                    <li>Subtraction</li>
+                    <li>Multiplication</li>
+                    <li>Division</li>
+                    <li>Modulus</li>
+                </ul>
+                <code>
+                    int result = 10 + 5; // Addition
+                </code>
+                <h3>Comparison Operators</h3>
+                <p>Comparison operators are used to compare values, such as:</p>
+                <ul>
+                    <li>Equal to</li>
+                    <li>Not equal to</li>
+                    <li>Greater than</li>
+                    <li>Less than</li>
+                </ul>
+                <code>
+                    bool isEqual = (10 == 5); // Equal to
+                </code>
+                <h3>Logical Operators</h3>
+                <p>Logical operators are used for logical operations, including:</p>
+                <ul>
+                    <li>Logical AND</li>
+                    <li>Logical OR</li>
+                    <li>Logical NOT</li>
+                </ul>
+                <code>
+                    bool isTrue = (true && false); // Logical AND
+                </code>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="main-section" id="Control_Flow">
+            <header>
+                <h2>Control Flow</h2>
+            </header>
+            <article>
+                <h3>Conditional Statements</h3>
+                <p>Conditional statements allow executing code based on conditions. They include:</p>
+                <ul>
+                    <li>If statements</li>
+                    <li>Else statements</li>
+                    <li>Else-if statements</li>
+                </ul>
+                <code>
+                    int number = 10;<br>
+                    if (number > 0) {<br>
+                    &nbsp&nbsp// Code block if condition is true<br>
+                    }<br>
+                    else {<br>
+                    &nbsp&nbsp// Code block if condition is false<br>
+                    }
+                </code>
+                <h3>Loops</h3>
+                <p>Loops are used to execute a block of code repeatedly. They include:</p>
+                <ul>
+                    <li>For loops</li>
+                    <li>While loops</li>
+                    <li>Do-while loops</li>
+                </ul>
+                <code>
+                    for (int i = 0; i < 5; i++) {<br>
+                    &nbsp&nbsp// Code block to be repeated<br>
+                    }
+            </code>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="main-section" id="Functions">
+            <header>
+                <h2>Functions</h2>
+            </header>
+            <article>
+                <h3>Defining and Calling Functions</h3>
+                <p>Functions are blocks of code that perform a specific task.
+                    They are defined using a return type, a function name, and optional parameters.
+                    Functions are called by their name followed by parentheses.</p>
+                <code>
+                    #include &ltiostream&gt<br>
+                    void sayHello() {<br>
+                    &nbsp&nbspstd::cout << "Hello, World!" << std::endl;<br>
+                    }<br>
+                    int main() {<br>
+                    &nbsp&nbspsayHello(); // Calling the function<br>
+                    &nbsp&nbspreturn 0;<br>
+                    }
+                </code>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="main-section" id="Object-Oriented_Programming_Basics">
+            <header>
+                <h2>Object-Oriented Programming Basics</h2>
+            </header>
+            <article>
+                <h3>Classes and Objects</h3>
+                <p>Classes are blueprints for creating objects.
+                    They contain data members (attributes) and member functions (methods) to operate on those data members.</p>
+                <code>
+                    #include &ltiostream&gt<br>
+                    class Dog {<br>
+                    &nbsp&nbsppublic:<br>
+                    &nbsp&nbspvoid bark() {<br>
+                    &nbsp&nbsp&nbsp&nbspstd::cout << "Woof!" << std::endl;<br>
+                    &nbsp&nbsp}<br>
+                    };<br>
+                    int main() {<br>
+                    &nbsp&nbspDog myDog;<br>
+                    &nbsp&nbspmyDog.bark(); // Calling the method<br>
+                    &nbsp&nbspreturn 0;<br>
+                    }
+                </code>
+                <h3>Constructors and Destructors</h3>
+                <p>Constructors are special member functions called when an object is created.
+                    They initialize the object's data members.
+                    Destructors are called when an object is destroyed and are used to clean up resources.</p>
+                <code>
+                    #include &ltiostream&gt<br>
+                    class Dog {<br>
+                    &nbsp&nbsppublic:<br>
+                    &nbsp&nbspDog() { // Constructor<br>
+                    &nbsp&nbsp&nbsp&nbspstd::cout << "Dog created" << std::endl;<br>
+                    &nbsp&nbsp}<br>
+                    &nbsp&nbsp~Dog() { // Destructor<br>
+                    &nbsp&nbsp&nbsp&nbspstd::cout << "Dog destroyed" << std::endl;<br>
+                    &nbsp&nbsp}<br>
+                    };<br>
+                    int main() {<br>
+                    &nbsp&nbspDog myDog;<br>
+                    &nbsp&nbspreturn 0;<br>
+                    }
+                </code>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="main-section" id="Standard_Library_and_Common_Functions">
+            <header>
+                <h2>Standard Library and Common Functions</h2>
+            </header>
+            <article>
+                <p>C++ provides a standard library with common functions and classes for various tasks such as:</p>
+                <ul>
+                    <li>Input/output</li>
+                    <li>String manipulation</li>
+                    <li>Data structures</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="main-section" id="Compilation_and_Execution">
+            <header>
+                <h2>Compilation and Execution</h2>
+            </header>
+            <article>
+                <p>C++ programs are compiled into machine code using a compiler.
+                    The compiled code is then executed to produce the desired output.</p>
+                <code>
+                    g++ program.cpp -o program<br>
+                    ./program
+                </code>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
